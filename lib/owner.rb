@@ -23,8 +23,8 @@ class Owner
     @pets.select {|pet| pet.class == Dog}
   end
   
-  def buy_cat 
-    
+  def buy_cat(cat_name)
+    Cats.all.find
   end
   
   # class methods
