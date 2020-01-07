@@ -12,7 +12,7 @@ class Owner
   end
   
   def say_species
-    puts @species
+    return "I am #{@species}."
   end
   
   # class methods
