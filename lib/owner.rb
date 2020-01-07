@@ -24,7 +24,8 @@ class Owner
   end
   
   def buy_cat(cat_name)
-    Cats.all.find
+    this_cat = Cats.all.find {|cat| cat.name == cat_name}
+    this_cat.owner
   end
   
   # class methods
