@@ -12,7 +12,11 @@ class Owner
   end
   
   def say_species
-    return "I am #{@species}."
+    return "I am a #{@species}."
+  end
+  
+  def cats
+    @pets.select{|pet| pet.}
   end
   
   # class methods
