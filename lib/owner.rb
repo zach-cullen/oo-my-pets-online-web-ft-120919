@@ -16,7 +16,7 @@ class Owner
   end
   
   def cats
-    @pets.select{|pet| pet.class == Cat}
+    @pets.select(){|pet| pet.class == Cat}
   end
   
   # class methods
