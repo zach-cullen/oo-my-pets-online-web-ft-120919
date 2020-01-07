@@ -29,6 +29,12 @@ class Owner
     @pets << this_cat
   end
   
+  def buy_dog(dog_name)
+    this_dog = Dog.all.find {|dog| dog.name == dog_name}
+    this_dog.owner = self
+    @pets << this_dog
+  end
+  
   # class methods
   
   def self.all 
