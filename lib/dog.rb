@@ -12,7 +12,7 @@ class Dog
     @@all << self
   end
   
-  # class methods
+  #class methods
   
   def self.all
     @@all
