@@ -31,8 +31,24 @@ class Owner
     Dog.new(dog_name, self)
   end
   
+  def feed_cats
+    self.cats.each {|cat| cat.mood = "happy"}
+  end
+  
   def walk_dogs
     self.dogs.each {|dog| dog.mood = "happy"}
+  end
+  
+  def list_pets 
+    "I have #{self.dogs.size} dog(s), and #{self.cats.size} cat(s)."
+  end
+  
+  def sell_pets
+    @pets.each do |pet| 
+      pet.mood = "nervous"
+      pet.owner = nil
+    end
+    @pets = []
   end
   
   # class methods
